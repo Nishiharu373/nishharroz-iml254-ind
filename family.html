@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Family</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b0b06c;
+  }
+
+  /* Header styling */
+  .header {
+    background-color: #4D4623;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* Navigation links styling */
+  .nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+  }
+
+  .nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .nav a:hover {
+    background-color: #575757;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  /* Flip card styling */
+  .flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    margin: 10px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /* Flex container for flip cards arranged horizontally */
+  .flip-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  /* Allows wrapping if the screen width is too small */
+    justify-content: center; /* Center the flip cards */
+    gap: 20px; /* Space between the cards */
+    margin: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+.footer {
+   position: flex;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 50%;
+   background-color: #4D4623;
+   color: white;
+   text-align: center;
+   }
+
+</style>
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+  <h1>Nishi's Website</h1>
+  <p>Welcome to my personal website!</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="nav">
+  <a href="index.html">Home</a>
+  <a href="myself.html">Myself</a>
+  <a href="family.html">Family</a>
+  <a href="friends.html">Friends</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="favourite.html">Favorite</a>
+  <a href="education.html">Education</a>
+</div>
+
+<br>
+<h1>PICTURES OF MY FAMILY</h1>
+<br>
+
+<!-- Flex Container for Flip Cards -->
+<div class="flip-card-container">
+  <!-- First Flip Card -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="image/ummitaman.jpeg" border="5" alt="Avatar" style="width:400px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Zurhayana Binti Nawi</h1> 
+        <p>A teacher</p> 
+        <p>My one and only lovely mother</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Flip Card -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="image/daarilpadi.jpeg" border="5" alt="Avatar" style="width:400px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Muhammad Daaril Al-Hadif Bin Mohd Shafirul</h1> 
+        <p>A fourth grader</p> 
+        <p>The youngest bro in the siblings</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third Flip Card -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="image/daaris.jpeg" border="5" alt="Avatar" style="width:400px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Muhammad Daaris Al-Hayyan Bin Mohd Shafirul</h1> 
+        <p>The infamous middle child</p> 
+        <p>He is always silent and mysterious</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fourth Flip Card -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="image/giyomi.jpeg" border="5" alt="Avatar" style="width:400px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Danish Al-Harroz Bin Mohd Shafirul</h1> 
+        <p>A mediocre university student</p> 
+        <p>The oldest son and the big brother of the family</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<center><a href="https://www.youtube.com/@nishimurasenpai8515" target="blank" class="fa fa-youtube" width="30" height="30"></a>
+<a href="https://www.instagram.com/nishimurawashere?igsh=MTNwOHUxMWRkeWN6dw==" target="blank" class="fa fa-instagram" width="30" height="30"></a>
+<a href="https://www.tiktok.com/@ch1zuruu?_t=8sIC8IqSzvm&_r=1" target="blank"><img src="image/tiktok.png" width="30" height="30">
+</a>
+<div class="footer">
+  <p>©2024 by Danish Al-Harroz - All rights reserved</p>
+</div>
+</body>
+</html>
